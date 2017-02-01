@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer_DongHoKim" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dong ho" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-Fj-kMp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DeP-s8-37O"/>
+                                    <constraint firstAttribute="width" constant="350" id="tXN-mZ-Oyo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kim" translatesAutoresizingMaskIntoConstraints="NO" id="wRo-oC-VVM" userLabel="ImgSec">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FGN-7C-kI6"/>
+                                    <constraint firstAttribute="height" constant="180" id="Wj5-pQ-sTo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kim" translatesAutoresizingMaskIntoConstraints="NO" id="FeM-OQ-0Ia" userLabel="ImgMin">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3DG-eb-l9C"/>
+                                    <constraint firstAttribute="height" constant="130" id="OYa-py-V4O"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kim" translatesAutoresizingMaskIntoConstraints="NO" id="Zp0-xQ-B23" userLabel="ImgHr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Wvm-yn-lCi"/>
+                                    <constraint firstAttribute="height" constant="90" id="rdb-sj-Bw0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wRo-oC-VVM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0yU-gu-EUd"/>
+                            <constraint firstItem="wRo-oC-VVM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BtR-Ly-s56"/>
+                            <constraint firstItem="0rM-Fj-kMp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oza-4T-4fK"/>
+                            <constraint firstItem="0rM-Fj-kMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rsr-0x-PWb"/>
+                            <constraint firstItem="Zp0-xQ-B23" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z85-aW-CfK"/>
+                            <constraint firstItem="FeM-OQ-0Ia" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aWF-zb-BdN"/>
+                            <constraint firstItem="FeM-OQ-0Ia" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u9d-7A-J3g"/>
+                            <constraint firstItem="Zp0-xQ-B23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zUn-1l-hqs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgHr" destination="Zp0-xQ-B23" id="ugr-qy-izc"/>
+                        <outlet property="imgMin" destination="FeM-OQ-0Ia" id="lRi-e1-rGx"/>
+                        <outlet property="imgSec" destination="wRo-oC-VVM" id="BW4-QY-XAk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Kim" width="200" height="200"/>
+        <image name="dong ho" width="300" height="250"/>
+    </resources>
+</document>
